@@ -108,7 +108,7 @@ toc: true
 
 comments:
   # 全局开关，控制文章评论系统。若为空则禁用评论。
-  provider: # [disqus | utterances | giscus]
+  provider: true # [disqus | utterances | giscus]
   # 下面是各评论提供商的设置：
   disqus:
     shortname: # 填写您的 Disqus 短名称 › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
