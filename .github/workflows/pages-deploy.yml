@@ -52,7 +52,7 @@ jobs:
 
       - name: Test site
         run: |
-          bundle exec htmlproofer _site  # 使用 htmlproofer 测试生成的网站
+            bundle exec htmlproofer _site  # 使用 htmlproofer 测试生成的网站
             --disable-external  # 禁用外部链接检查
             --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"  # 忽略本地地址
 
