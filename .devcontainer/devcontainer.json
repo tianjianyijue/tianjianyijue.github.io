@@ -1,27 +1,27 @@
 {
-  "name": "Jekyll",
-  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
-  "onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
-  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "name": "Jekyll",  // 容器名称为 Jekyll
+  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",  // 使用的 Docker 镜像
+  "onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}", // 容器创建时执行的命令，配置 Git 安全目录
+  "postCreateCommand": "bash .devcontainer/post-create.sh", // 容器创建后执行的命令，运行 post-create 脚本
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
+        "terminal.integrated.defaultProfile.linux": "zsh"  // 设置 VS Code 终端默认使用 zsh
       },
       "extensions": [
-        // Liquid tags auto-complete
+        // Liquid 标签自动补全
         "killalau.vscode-liquid-snippets",
-        // Liquid syntax highlighting and formatting
+        // Liquid 语法高亮和格式化
         "Shopify.theme-check-vscode",
-        // Shell
+        // Shell 脚本检查
         "timonwong.shellcheck",
         "mkhl.shfmt",
-        // Common formatter
+        // 常用格式化工具
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
         "stylelint.vscode-stylelint",
-        "yzhang.markdown-all-in-one",
-        // Git
+        "yzhang.markdown-all-in-one",  // Markdown 支持
+        // Git 工具
         "mhutchie.git-graph"
       ]
     }

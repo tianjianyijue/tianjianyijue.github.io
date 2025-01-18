@@ -2,25 +2,25 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run Jekyll Server",
-      "type": "shell",
-      "command": "./tools/run.sh",
+      "label": "Run Jekyll Server",  // 任务标签：运行 Jekyll 服务器
+      "type": "shell",  // 任务类型：Shell
+      "command": "./tools/run.sh",  // 执行的命令：./tools/run.sh
       "group": {
-        "kind": "build",
-        "isDefault": true
+        "kind": "build",  // 任务分组：构建
+        "isDefault": true  // 设置为默认任务
       },
-      "problemMatcher": [],
-      "detail": "Runs the Jekyll server with live reload."
+      "problemMatcher": [],  // 无问题匹配器
+      "detail": "Runs the Jekyll server with live reload."  // 任务详细描述：运行 Jekyll 服务器并启用实时重载
     },
     {
-      "label": "Build Jekyll Site",
-      "type": "shell",
-      "command": "./tools/test.sh",
+      "label": "Build Jekyll Site",  // 任务标签：构建 Jekyll 网站
+      "type": "shell",  // 任务类型：Shell
+      "command": "./tools/test.sh",  // 执行的命令：./tools/test.sh
       "group": {
-        "kind": "build"
+        "kind": "build"  // 任务分组：构建
       },
-      "problemMatcher": [],
-      "detail": "Build the Jekyll site for production."
+      "problemMatcher": [],  // 无问题匹配器
+      "detail": "Build the Jekyll site for production."  // 任务详细描述：为生产环境构建 Jekyll 网站
     }
   ]
 }
