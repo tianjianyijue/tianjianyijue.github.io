@@ -1,5 +1,5 @@
-#  Sharing options at the bottom of the post.
-#  Icons from <https://fontawesome.com/>
+# 文章底部的分享选项。
+# 图标来自 <https://fontawesome.com/>
 
 platforms:
   - type: Twitter
@@ -14,7 +14,7 @@ platforms:
     icon: "fab fa-telegram"
     link: "https://t.me/share/url?url=URL&text=TITLE"
 
-  # Uncomment below if you need to.
+  # 如果需要，取消下面的注释。
   #
   # - type: Linkedin
   #   icon: "fab fa-linkedin"
@@ -26,7 +26,7 @@ platforms:
   #
   # - type: Mastodon
   #   icon: "fa-brands fa-mastodon"
-  #   # See: https://github.com/justinribeiro/share-to-mastodon#properties
+  #   # 参见: https://github.com/justinribeiro/share-to-mastodon#properties
   #   instances:
   #     - label: mastodon.social
   #       link: "https://mastodon.social/"
